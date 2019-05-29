@@ -25,7 +25,7 @@ h1{
     font-weight: bold;
 }
 
-ul{
+.innerlist{
     list-style-image: url("./pie_icon.gif");
     font-weight: normal;
 }
@@ -48,9 +48,7 @@ footer{
 .abbrevaration{
     text-decoration: underline;
 }
-.abbrevaration:hover{
-    display: "tooltip";
-}
+
 .search{
     text-decoration: underline;
     color: #A4A400;
