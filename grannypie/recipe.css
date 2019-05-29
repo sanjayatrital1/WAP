@@ -24,10 +24,15 @@ h1{
 .listheading{
     font-weight: bold;
 }
+ul{
+    list-style-image: url("./pie_icon.gif");
+    font-weight: normal;  
+}
 
 .innerlist{
     list-style-image: url("./pie_icon.gif");
     font-weight: normal;
+    margin-left: 35px;
 }
 footer{
     margin-top: 10pt;
