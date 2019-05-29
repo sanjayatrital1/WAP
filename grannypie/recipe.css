@@ -56,3 +56,6 @@ footer{
 .validator{
     text-align: right;
 }
+.abbrevaration:hover{
+    display:inline;
+}
