@@ -37,9 +37,16 @@ footer{
 .usercomments{
     margin: 20pt;
     font-style: italic;
+}
+.comments{
     background-color:rgb(238, 238, 138) ;
 }
-
+.question{
+    background-color:rgb(238, 238, 138) ;
+}
+.interest{
+    background-color:rgb(238, 238, 138) ;
+}
 .abbrevaration{
     text-decoration: underline;
 }
