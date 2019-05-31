@@ -77,15 +77,15 @@ aside{
     box-sizing: border-box;
 }
 
-section{
+.section{
     max-width: 550px;
 }
-section header{
+.section header{
     width: 100%;
     background-image: url("./rbg.png");
     background-repeat: repeat-x;
 }
-section header img{
+.section header img{
     vertical-align: top;
 }
 
