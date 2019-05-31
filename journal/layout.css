@@ -3,9 +3,6 @@ body{
     background-repeat: repeat;
     margin-left: 10%;
     margin-right: 10%;
-    position: absolute;
-    top: 0px;
-	left: 0px;
 }
 
 #container{
