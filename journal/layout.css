@@ -10,18 +10,22 @@ body{
     border: 5px solid green ;
     background-color: white;
     border: 10px solid white;
+    color: #009097;
 
 }
 .header{
 background-color: #A8F0F0;
 text-align: right;
+color: #009097;
 }
 .top{
     border: 5px solid rgb(255, 196, 0);
     font-size: 14pt;
     border: none;
+    color: #009097;
 }
 .para2{
+    color: #009097;
     position: relative;
     background-color: #E8FBFB;
     padding: 5px;
@@ -60,4 +64,5 @@ aside>div{
 	border-radius: 15px;
 	padding: 5px;
     margin: 10px;
+    color: #009097;
 }
