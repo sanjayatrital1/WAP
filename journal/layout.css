@@ -66,6 +66,9 @@ aside>div{
     margin: 10px;
     color: #009097;
 }
+aside>div h1{
+    font-size: 30px;
+}
 a{
     color: #009097;
 	
