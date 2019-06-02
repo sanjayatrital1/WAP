@@ -4,7 +4,7 @@ let somethingElse= function () {
         if (greater) {
             alert("Bigger");
             }
-        let smaller= "5" < "2";
+    let smaller= "5" < "2";
         if (smaller) {
             alert("Smaller");
         }
