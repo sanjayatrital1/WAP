@@ -9,7 +9,7 @@ let somethingElse= function () {
             alert("Smaller");
         }
     };
-    
+    somethingElse();
     let gogogo = function () {
     'use strict';
         alert("Yay, it works!");
