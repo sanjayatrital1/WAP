@@ -1,10 +1,10 @@
 let somethingElse= function () {
     'use strict';
-    let greater=5 > 2;
+    let greater="5" > "2";
         if (greater) {
             alert("Bigger");
             }
-        let smaller= 5 < 2;
+        let smaller= "5" < "2";
         if (smaller) {
             alert("Smaller");
         }
