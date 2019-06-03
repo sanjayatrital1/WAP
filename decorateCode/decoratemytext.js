@@ -1,5 +1,5 @@
 window.onload = function(){
-    `use strict`;
+    'use strict';
     let value =false;
     let timerId;
     let decorateButton = document.getElementById("decoration");
@@ -7,16 +7,12 @@ window.onload = function(){
         if(value){
             value = false;
             stop(timerId);
-            
         }
         else{
             value = true;
             timerId =setInterval(increaseSize, 500);
-            
         }
-        
     };
-
 
    let blingBox = document.getElementById("bling");
    blingBox.onchange = function(){
@@ -26,7 +22,7 @@ window.onload = function(){
         textArea.style.fontWeight="bold";
         textArea.style.color="green";
         textArea.style.textDecoration="underline";
-        document.body.style.backgroundImage= "URL('http://www.cs.washington.edu/education/courses/190m/CurrentQtr/labs/6/hundred-dollar-bill.jpg')" ;
+        document.body.style.backgroundImage= "URL('http://www.cs.washington.edu/education/courses/190m/CurrentQtr/labs/6/hundred-dollar-bill.jpg')";
         document.body.style.background.color="transparent";
     }
     else{
@@ -38,11 +34,13 @@ window.onload = function(){
 };
 
 let increaseSize= function(){
+'use strict';
     let textElement= document.getElementById("simpletext");
         let cSSprop = window.getComputedStyle(textElement,null).getPropertyValue("font-size");
         textElement.style.fontSize = parseInt(cSSprop)+ 2 +"px";
-}
+};
 
 let stop = function(id){
+'use strict';
     clearInterval(id);
-}
+};
