@@ -1,0 +1,15 @@
+footer{
+    margin-top: 15%;
+    margin-right: 15px;
+    text-align: left;
+}
+button{
+    background-color: red;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 15px;
+    margin: 10px;
+    padding: 10px;
+    
+}
