@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <link href="ascii.css" rel="stylesheet" type="text/css"/>
+        <script src="animations.js"></script>
+        <script src="ascii.js" defer="defer"></script>
+        
+
+        <title>CS472: ASCII Animation Viewer</title>
+    </head>
+    <body>
+        <div class="container">
+            <h1>CSE 190 M ASCII Animation Viewer</h1>
+            <textarea id="playArea" cols="80" rows="20">
+
+            </textarea>
+            <fieldset id="playcontrol">
+                <legend>Play Controls:</legend>
+                <button id="start">Start</button>
+                <button id="stop" disabled>Stop</button>
+            </fieldset>
+
+            <fieldset id="animation">
+                <legend >Animations:</legend>
+                <select id="animationType" name="Animation">
+                    <option value="BLANK" selected>blank</option>
+                    <option value="EXERCISE">EXERCISE</option>
+                    <option value="JUGGLER">JUGGLER</option>
+                    <option value="BIKE">BIKE</option>
+                    <option value="DIVE">DIVE</option>
+                </select>
+            </fieldset>
+
+            <fieldset id="size">
+                <legend>Size:</legend>
+                <select id="frontsize" name="Size">
+                    <option value="Tiny">Tiny</option>
+                    <option value="Small">Small</option>
+                    <option value="Medium" selected>Medium</option>
+                    <option value="Large">Large</option>
+                    <option value="ExtraLarge">Extra Large</option>
+                    <option value="XXL">XXL</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Speed:</legend>
+                <input type="checkbox" id="turbo" />Turbo
+            </fieldset>
+        </div>
+
+        <footer>
+            <a href="https://validator.w3.org/check/referer">
+                <img src="http://mumstudents.org/cs472/images/w3c-html.png" alt="html validator"/>
+            </a>
+    
+                <a href="https://jigsaw.w3.org/css-validator/check/referer">
+                <img src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!" />
+            </a>
+
+            <a href="https://webster.cs.washington.edu/jslint/?referer">
+                <img src="https://webster.cs.washington.edu/w3c-js.png" alt="Valid JS" />
+            </a>
+        </footer>
+
+    </body>
+</html>
