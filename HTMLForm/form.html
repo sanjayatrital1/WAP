@@ -2,9 +2,133 @@
 <html lang="en">
     <head>
         <meta charset="utf-8"/>
+        <link href="./style.css" rel="stylesheet"/>
         <title>Apply for a Capital credit one</title>
     </head>
     <body>
-        
+        <div class="containeer">
+            <img src="./cof-logo.png" alt="favicon"/>
+            <h1>Guaranteed Low Rate Mastercard®</h1>
+            <h3>With a 14.9% Interest Rate</h3>
+
+            <div class="mainArea">
+                <fieldset id="aggrement">
+                    <legend>Important Disclosures</legend>
+                    <textarea rows="10" cols="150">
+
+                    </textarea>
+                </fieldset>
+                <form action="" method="POST">
+                <h2>Personal Information</h2>
+                <div class="wrap">
+                    <label>First Name</label>
+                    <input type="text" name="firstName" required/>
+                    <label>Last Name</label>
+                    <input type="text" name="lastName" required/>
+                </div>
+                <div class="wrap">
+                    <label>Date Of Birth</label>
+                    <input type="datetime" placeholder="MM/DD/YY" required/>
+                    <label>Mother’s Maiden Name</label>
+                    <input type="text" name="motherName" required/>
+                </div>
+                <img src="./card-en.png" alt="cardpic" height="150" width="200"/>
+                <div class="wrap">
+                        <label>Social Insurance Number(Optional)</label>
+                        <input type="number"/>
+                        <label>How did you learn about this card? (Optional)</label>
+                        <select>
+                            <option value="blank" selected>Select Source</option>
+                            <option value="mailOffer">Mail Offer</option>
+                            <option value="search">Search</option>
+                            <option value="facebookAd">Facebook Ad</option>
+                            <option value="onlineBannerAd">Online Banner Ad</option>
+                        </select>  
+                    </div>
+                    <hr />
+
+                    <h2>Contact Information</h2>
+                    <div class="wrap">
+                            <label>Home Address (No P.O. Boxes)</label>
+                            <input type="text" required/>
+                            <label>Suite/Apt. # (if Applicable)</label>
+                            <input type="text" name="apt"/>
+                    </div>
+                    <div class="wrap">
+                            <label>Email Address</label>
+                            <input type="email" required/>
+                            <label>Primary Phone Number</label>
+                            <input type="number" name="phone" required/>
+                    </div>
+                    <hr />
+                    <h2>Authorized User</h2>
+                    <label><input type="checkbox" required/>
+                            Yes! I would like to add an Authorized User (AU) to my account and receive a second card with their name on it.
+                    </label>
+                    <hr />
+                    <h2>Employment Information</h2>
+                    <div class="wrap">
+                            <label>Employment Status</label>
+                            <select required>
+                                <option value="blank" selected >Select status</option>
+                                <option value="student">Student</option>
+                                <option value="employed">Employed</option>
+                                <option value="unemloyed">Unemployed</option>
+                                <option value="selfEmployed">Self Employed</option>
+                            </select> 
+                            
+                            <label class="companyName" hidden>Industry</label>
+                            <select class="companyName" hidden >
+                                    <option value="blank" selected aria-placeholder="Select">Select Industry</option>
+                                    <option value="IT">IT</option>
+                                    <option value="business">Business</option>
+                                    <option value="banking">Banking</option>
+                                    <option value="education">Education</option>
+                                </select> 
+                         </div>
+                         <hr />
+                         <h2>Financial Information</h2>
+                         <label>Do you: (Optional)</label>
+                         <label><input type="radio" value="own" name="live">Own</label>
+                         <label><input type="radio"  value="rent" name="live">Rent</label>
+                         <label><input type="radio"  value="parents" name="live">Live with Parents</label>
+                         <label><input type="radio" name="live" value="others">Others</label>
+                        
+
+                         <div class="wrap">
+                                <label>Your Annual Income (Before Taxes)</label>
+                                <input type="number" name="annualIncome"/>
+                                <label>Other Household Income (Before Taxes)</label>
+                                <input type="number" name="otherIncome"/>
+                        </div>
+                        <div class="wrap">
+                                <label>Do you have a mortgage? (Optional)</label>
+                               <label> <input type="radio" name="mortgage" value="yes"/>Yes</label>
+                               <label> <input type="radio" name="mortgage" value="no"/>No</label>
+                                <label>Monthly Rent/Mortgage (Optional)</label>
+                                <input type="number" name="mortgageIncome" />
+                        </div>
+
+                        <div class="wrap">
+                                <label>Do you have any bank accounts?</label>
+                                <select required>
+                                    <option value="blank" selected >Select a type</option>
+                                    <option value="checking">Checking</option>
+                                    <option value="saving">Saving</option>
+                                    <option value="both">Checking and Saving</option>
+                                    <option value="neither">Neither</option>
+                                </select> 
+                                <label>Would you like to use your card for cash advances? (Optional)</label>
+                                <label> <input type="radio" name="cash" value="yes"/>Yes</label>
+                               <label> <input type="radio" name="cash" value="no"/>No</label>
+                        </div>
+                        <input type="submit" value="Review My Application"/>
+            </form>
+            <footer>
+
+            </footer>
+            </div>
+        </div>
+
     </body>
 </html>
