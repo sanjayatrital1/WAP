@@ -1,6 +1,5 @@
 (function(){
     "use strict";
-    
     const createButton = document.getElementById('create');
     const accountName = document.getElementById('accountName');
     const accountBalance = document.getElementById('depositType');
@@ -31,16 +30,16 @@
         };
         return{
             a: start
-        }
+        };
     }();
 
     createButton.onclick = function(){
         main.a();
-    }
+    };
 
     const clear = function(){
         accountName.value="";
         accountBalance.value="";
         result.value="";
-    }
+    };
 })();
