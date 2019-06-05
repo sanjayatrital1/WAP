@@ -18,14 +18,11 @@ label{
     font-size: 16px;
 }
 .textType,select {
-    font-weight: bold;
+    padding: 10px;
     width: 50%;
     margin: 10px auto;
     border: 2px solid rgb(180, 176, 176);
-    box-shadow: 8px snow;
     border-radius:10px;
-    box-sizing: border-box;
-    padding: 10px;
     }
 
 .wrapper1{
@@ -52,6 +49,16 @@ label{
     padding: 10px;
 }
 
+.submitButton{
+    border: 2px solid rgb(128, 123, 123);
+    border-radius:20px;
+    display: block;
+    font-size: 25pt;
+    background-color: greenyellow;
+    align-content: center;
+    margin: auto;
+    color: red;
+}
 
 input:focus:invalid:required{
     border: 2px solid red;
