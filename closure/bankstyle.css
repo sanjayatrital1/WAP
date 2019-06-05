@@ -1,0 +1,15 @@
+label{
+    font-style: normal;
+    margin: 10px auto;
+    padding: 10px;
+    font-size: 14pt;
+}
+textarea{
+    font-size: 14pt;
+    margin: 10px auto;
+}
+
+input[type="text"]{
+    margin: 10px auto;
+    padding: 10px;
+}
