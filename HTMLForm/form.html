@@ -14,28 +14,42 @@
             <div class="mainArea">
                 <fieldset id="aggrement">
                     <legend>Important Disclosures</legend>
-                    <textarea rows="10" cols="150">
-
+                    <textarea rows="10" cols="150">The Credit Card Accountability, Responsibility, and Disclosure Act of 2009 is a federal law designed to protect credit card users from abusive lending practices by card issuers. Its primary goals are the reduction of unexpected fees and improvements in the disclosure of costs and penalties.Since its passage in 2009, consumer advocates have argued that the law does not go far enough in prohibiting abusive or unfair practices. Some interest rate increases, such as those resulting directly from Federal Reserve rate hikes or from the end of an introductory period, remain allowable without advance notice from card issuers. Deferred interest charges, or charges compiled retroactively at the end of an introductory interest-free period, are still allowed under the law. Perks used to market cards, such as identity theft protection, awards programs or penalty-free grace periods, remain generally unregulated as well. The law also fails to regulate cards or cards issued in the name of a business.
+                    
                     </textarea>
                 </fieldset>
-                <form action="" method="POST">
+                <form action="#" method="POST">
                 <h2>Personal Information</h2>
-                <div class="wrap">
+                <div class="wrapper1">
+                <div class="wrap1">
                     <label>First Name</label>
-                    <input type="text" name="firstName" required/>
-                    <label>Last Name</label>
-                    <input type="text" name="lastName" required/>
-                </div>
-                <div class="wrap">
+                    <input type="text" name="firstName" required
+                    pattern="[a-Za-z]{1,}"/>
                     <label>Date Of Birth</label>
                     <input type="datetime" placeholder="MM/DD/YY" required/>
-                    <label>Mother’s Maiden Name</label>
-                    <input type="text" name="motherName" required/>
+                    
                 </div>
-                <img src="./card-en.png" alt="cardpic" height="150" width="200"/>
+                <div class="wrap1">
+                    <label>Last Name</label>
+                    <input type="text" name="lastName" required
+                    pattern="[a-Za-z]{1,}"/>
+                    <label>Mother’s Maiden Name</label>
+                    <input type="text" name="motherName" required
+                    pattern="[a-Za-z]{1,}"/>
+                </div>
+                <div class="wrap1">
+                    <img src="./card-en.png" alt="cardpic" height="150" width="200"/>
+                </div>
+            </div>
+               
                 <div class="wrap">
                         <label>Social Insurance Number(Optional)</label>
-                        <input type="number"/>
+                        <input type="number" placeholder="___-___-___"
+                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" required
+                        title="Valid format xxx-xxx-xxx" 
+                        maxlength="9"/>
+                </div>
+                <div class="wrap">
                         <label>How did you learn about this card? (Optional)</label>
                         <select>
                             <option value="blank" selected>Select Source</option>
@@ -56,9 +70,14 @@
                     </div>
                     <div class="wrap">
                             <label>Email Address</label>
-                            <input type="email" required/>
+                            <input type="email" required
+                            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                            title="Enter valid email"/>
                             <label>Primary Phone Number</label>
-                            <input type="number" name="phone" required/>
+                            <input type="number" name="phone" required
+                            placeholder="___-___-____"
+                            pattern="\d{3}-\d{3}-\d{4}"
+                            title="valid format xxx-xxx-xxxx"/>
                     </div>
                     <hr />
                     <h2>Authorized User</h2>
@@ -76,35 +95,31 @@
                                 <option value="unemloyed">Unemployed</option>
                                 <option value="selfEmployed">Self Employed</option>
                             </select> 
-                            
-                            <label class="companyName" hidden>Industry</label>
-                            <select class="companyName" hidden >
-                                    <option value="blank" selected aria-placeholder="Select">Select Industry</option>
-                                    <option value="IT">IT</option>
-                                    <option value="business">Business</option>
-                                    <option value="banking">Banking</option>
-                                    <option value="education">Education</option>
-                                </select> 
                          </div>
                          <hr />
+                         
                          <h2>Financial Information</h2>
                          <label>Do you: (Optional)</label>
-                         <label><input type="radio" value="own" name="live">Own</label>
-                         <label><input type="radio"  value="rent" name="live">Rent</label>
-                         <label><input type="radio"  value="parents" name="live">Live with Parents</label>
-                         <label><input type="radio" name="live" value="others">Others</label>
-                        
+                         <div class="radioclass">
+                             <label><input type="radio" value="own" name="live">Own</label>
+                            <label><input type="radio"  value="rent" name="live">Rent</label>
+                            <label><input type="radio"  value="parents" name="live">Live with Parents</label>
+                            <label><input type="radio" name="live" value="others">Others</label>
+                         </div>
 
                          <div class="wrap">
                                 <label>Your Annual Income (Before Taxes)</label>
-                                <input type="number" name="annualIncome"/>
-                                <label>Other Household Income (Before Taxes)</label>
-                                <input type="number" name="otherIncome"/>
+                                <input type="number" name="annualIncome" placeholder="$"/>
+                                
+                                    <label>Do you have a mortgage? (Optional)</label>
+                                    <div class="radioclass">
+                                    <label> <input type="radio" name="mortgage" value="yes"/>Yes</label>
+                                     <label> <input type="radio" name="mortgage" value="no"/>No</label>
+                                </div>
                         </div>
                         <div class="wrap">
-                                <label>Do you have a mortgage? (Optional)</label>
-                               <label> <input type="radio" name="mortgage" value="yes"/>Yes</label>
-                               <label> <input type="radio" name="mortgage" value="no"/>No</label>
+                            <label>Other Household Income (Before Taxes)</label>
+                            <input type="number" name="otherIncome" placeholder="$"/>
                                 <label>Monthly Rent/Mortgage (Optional)</label>
                                 <input type="number" name="mortgageIncome" />
                         </div>
@@ -118,14 +133,24 @@
                                     <option value="both">Checking and Saving</option>
                                     <option value="neither">Neither</option>
                                 </select> 
-                                <label>Would you like to use your card for cash advances? (Optional)</label>
-                                <label> <input type="radio" name="cash" value="yes"/>Yes</label>
-                               <label> <input type="radio" name="cash" value="no"/>No</label>
+                                
+                                    <label>Would you like to use your card for cash advances? (Optional)</label>
+                                <div class="radioclass">
+                                    <label> <input type="radio" name="cash" value="yes"/>Yes</label>
+                                    <label> <input type="radio" name="cash" value="no"/>No</label>
+                                </div>
                         </div>
                         <input type="submit" value="Review My Application"/>
             </form>
             <footer>
-
+                <a href="https://validator.w3.org/check/referer">
+                    <img src="http://mumstudents.org/cs472/images/w3c-html.png" alt="html validator"/>
+                </a>
+            
+                    <a href="https://jigsaw.w3.org/css-validator/check/referer">
+                    <img src="https://jigsaw.w3.org/css-validator/images/vcss
+                    " alt="Valid CSS!" />
+                </a>
             </footer>
             </div>
         </div>
