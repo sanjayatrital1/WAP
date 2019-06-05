@@ -34,7 +34,9 @@
     }();
 
     createButton.onclick = function(){
-        main.a();
+        if(accountBalance.value !=="" && accountName!==""){
+            main.a();
+        }
     };
 
     const clear = function(){
