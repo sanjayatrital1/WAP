@@ -52,17 +52,7 @@ label{
     padding: 10px;
 }
 
-.submitButton{
-    border: 2px solid rgb(128, 123, 123);
-    box-shadow: 8px snow;
-    border-radius:20px;
-    display: block;
-    font-size: 25pt;
-    background-color: greenyellow;
-    align-content: center;
-    margin: auto;
-    color: red;
-}
+
 input:focus:invalid:required{
     border: 2px solid red;
 }
