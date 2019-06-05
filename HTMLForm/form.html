@@ -23,19 +23,19 @@
                 <div class="wrapper1">
                 <div class="wrap1">
                     <label>First Name</label>
-                    <input type="text" name="firstName" required
+                    <input type="text" class="textType" name="firstName" required
                     pattern="[a-Za-z]{1,}"/>
                     <label>Date Of Birth</label>
-                    <input type="text" placeholder="MM/DD/YY" required
+                    <input type="text" class="textType" placeholder="MM/DD/YY" required
                     pattern="^\d{2}\/\d{2}\/\d{4}$"/>
                     
                 </div>
                 <div class="wrap1">
                     <label>Last Name</label>
-                    <input type="text" name="lastName" required
+                    <input type="text" class="textType" name="lastName" required
                     pattern="[a-Za-z]{1,}"/>
                     <label>Mother’s Maiden Name</label>
-                    <input type="text" name="motherName" required
+                    <input type="text" class="textType" name="motherName" required
                     pattern="[a-Za-z]{1,}"/>
                 </div>
                 <div class="wrap1">
@@ -45,7 +45,7 @@
                
                 <div class="wrap">
                         <label>Social Insurance Number(Optional)</label>
-                        <input type="text" placeholder="___-___-___"
+                        <input type="text" class="textType" placeholder="___-___-___"
                         pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" required
                         title="Valid format xxx-xxx-xxx" 
                         maxlength="9"/>
@@ -65,17 +65,17 @@
                     <h2>Contact Information</h2>
                     <div class="wrap">
                             <label>Home Address (No P.O. Boxes)</label>
-                            <input type="text" required/>
+                            <input type="text" class="textType" required/>
                             <label>Suite/Apt. # (if Applicable)</label>
-                            <input type="text" name="apt"/>
+                            <input type="text" class="textType" name="apt"/>
                     </div>
                     <div class="wrap">
                             <label>Email Address</label>
-                            <input type="email" required
+                            <input type="email" class="textType" required
                             pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
                             title="Enter valid email"/>
                             <label>Primary Phone Number</label>
-                            <input type="text" name="phone" required
+                            <input type="text" class="textType" name="phone" required
                             placeholder="___-___-____"
                             pattern="\d{3}-\d{3}-\d{4}"
                             title="valid format xxx-xxx-xxxx"/>
@@ -110,7 +110,7 @@
 
                          <div class="wrap">
                                 <label>Your Annual Income (Before Taxes)</label>
-                                <input type="number" name="annualIncome" placeholder="$"/>
+                                <input type="number" class="textType" name="annualIncome" placeholder="$"/>
                                 
                                     <label>Do you have a mortgage? (Optional)</label>
                                     <div class="radioclass">
@@ -120,9 +120,9 @@
                         </div>
                         <div class="wrap">
                             <label>Other Household Income (Before Taxes)</label>
-                            <input type="number" name="otherIncome" placeholder="$"/>
+                            <input type="number" class="textType" name="otherIncome" placeholder="$"/>
                                 <label>Monthly Rent/Mortgage (Optional)</label>
-                                <input type="number" name="mortgageIncome" />
+                                <input type="number" class="textType" name="mortgageIncome" />
                         </div>
 
                         <div class="wrap">
@@ -141,7 +141,7 @@
                                     <label> <input type="radio" name="cash" value="no"/>No</label>
                                 </div>
                         </div>
-                        <input type="submit" value="Review My Application"/>
+                        <input type="submit" class="submitButton" value="Review My Application"/>
             </form>
             <footer>
                 <a href="https://validator.w3.org/check/referer">
