@@ -26,7 +26,8 @@
                     <input type="text" name="firstName" required
                     pattern="[a-Za-z]{1,}"/>
                     <label>Date Of Birth</label>
-                    <input type="datetime" placeholder="MM/DD/YY" required/>
+                    <input type="text" placeholder="MM/DD/YY" required
+                    pattern="^\d{2}\/\d{2}\/\d{4}$"/>
                     
                 </div>
                 <div class="wrap1">
@@ -44,7 +45,7 @@
                
                 <div class="wrap">
                         <label>Social Insurance Number(Optional)</label>
-                        <input type="number" placeholder="___-___-___"
+                        <input type="text" placeholder="___-___-___"
                         pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" required
                         title="Valid format xxx-xxx-xxx" 
                         maxlength="9"/>
@@ -74,7 +75,7 @@
                             pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
                             title="Enter valid email"/>
                             <label>Primary Phone Number</label>
-                            <input type="number" name="phone" required
+                            <input type="text" name="phone" required
                             placeholder="___-___-____"
                             pattern="\d{3}-\d{3}-\d{4}"
                             title="valid format xxx-xxx-xxxx"/>
@@ -88,7 +89,7 @@
                     <h2>Employment Information</h2>
                     <div class="wrap">
                             <label>Employment Status</label>
-                            <select required>
+                            <select>
                                 <option value="blank" selected >Select status</option>
                                 <option value="student">Student</option>
                                 <option value="employed">Employed</option>
@@ -126,7 +127,7 @@
 
                         <div class="wrap">
                                 <label>Do you have any bank accounts?</label>
-                                <select required>
+                                <select>
                                     <option value="blank" selected >Select a type</option>
                                     <option value="checking">Checking</option>
                                     <option value="saving">Saving</option>
