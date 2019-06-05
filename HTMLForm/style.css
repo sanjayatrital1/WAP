@@ -72,6 +72,8 @@ footer{
 textarea{
     font-family: 'Courier New', Courier, monospace;
     font-size: 10pt;
+    color: black;
+    background-color: white;
 }
 legend{
     color: rgb(16, 130, 145);
