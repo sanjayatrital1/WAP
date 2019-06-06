@@ -6,7 +6,6 @@
     let msg;
     
     $(function(){
-        alert("Click box S to start");
         $("#start").click(start);
     });
     let ready = function(){
