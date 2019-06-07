@@ -8,31 +8,22 @@
     const main = function(){
         const displayAccount = function(){
             clear();
+            console.log(accountInfoList);
             for(let a of accountInfoList){
                result.value += `Account Name:${a.name} Balance: ${a.balance} \n`;
             }
         };
-
-        const createAccount = function(){
-            return{
+        const insertItem = function(){
+            accountInfoList.push({
                 name: accountName.value,
                 balance: parseFloat(accountBalance.value)
-            };
-        };
-
-        const insertItem = function(account){
-            accountInfoList.push(account);
+            });
             displayAccount();
         };
-
-        const start = function(){
-            insertItem(createAccount());
-        };
         return{
-            a: start
+            a: insertItem
         };
     }();
-
     createButton.onclick = function(){
         if(accountBalance.value !=="" && accountName!==""){
             main.a();
