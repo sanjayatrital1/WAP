@@ -2,7 +2,7 @@
 
 $(function() {
 	$('#hw').change(function() {
-		var file = 'homeworks/'+$('#hw').val();
+		var file = './'+$('#hw').val();
 		$.ajax({
 			'url': file,
 			'type': 'GET',
