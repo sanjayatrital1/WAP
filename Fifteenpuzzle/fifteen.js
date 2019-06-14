@@ -2,7 +2,7 @@
     'use strict';
     
     let count = 0;
-    const empty = {
+    const isempty = {
         x: '300',
         y: '300'
     }
@@ -24,13 +24,7 @@
         });
     };
 
-    const play = function(){
-        $('#puzzlearea>div').mouseover(isValid);
-        $('#puzzlearea>div').click(move);
-        $('#shufflebutton').click(shuffle);
-    }
-
-    const shuffle = function(){
+    const doShuffle = function(){
         
         if(count != 0) return false;
         let doShuffle;
@@ -44,21 +38,21 @@
             let index = Math.floor(Math.random() * len);
             piece[index].click();
             count++;
-            if(count > 100){
+            if(count > 40){
                 clearInterval(doShuffle);
                 count = 0;
                 $('#shufflebutton').attr('disabled', false);
             }
-        }, 50);
+        }, 100);
     }
 
-    const isValid = function(evt){
+    const isSuffleValid = function(evt){
         evt.target.valid = false;
-        if(evt.target.y == empty.y){
-            if(evt.target.x + 100 == empty.x || evt.target.x - 100 == empty.x)
+        if(evt.target.y == isempty.y){
+            if(evt.target.x + 100 == isempty.x || evt.target.x - 100 == isempty.x)
                 evt.target.valid = true;
-        } else if(evt.target.x == empty.x){
-            if(evt.target.y + 100 == empty.y || evt.target.y - 100 == empty.y)
+        } else if(evt.target.x == isempty.x){
+            if(evt.target.y + 100 == isempty.y || evt.target.y - 100 == isempty.y)
                 evt.target.valid = true;
         }
         evt.target.valid ? 
@@ -66,11 +60,11 @@
             $(evt.target).removeClass('movablepiece');
     }
 
-    const move = function(evt){
+    const changePosition = function(evt){
         if(!evt.target.valid) return false;
-        let {x, y} = empty;
-        empty.x = evt.target.x;
-        empty.y = evt.target.y;
+        let {x, y} = isempty;
+        isempty.x = evt.target.x;
+        isempty.y = evt.target.y;
         evt.target.x = x;
         evt.target.y = y;
 
@@ -82,7 +76,9 @@
 
     $(function(){
         init();
-        play();
+        $('#puzzlearea>div').mouseover(isSuffleValid);
+        $('#puzzlearea>div').click(changePosition);
+        $('#shufflebutton').click(doShuffle);
     })
 
 })();
